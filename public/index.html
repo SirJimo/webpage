@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/public/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <title>Register Page Final Test </title>
+    </head>
+    <body>
+        <header>
+            <h1 class="logo">Logo</h1>
+            <nav class="navbar">
+                <a href="#">Home</a>
+                <a href="#rooms">Rooms</a>
+                <a href="#contact">Contact US</a>
+                <a href="#about">About</a>
+                
+               <button class="btnBook-poppup" id="contact">Book</button>
+            </nav>
+        </header>
+        <main>
+            <div class="home-info" id="#">
+                <h1>Welcome To V&A Backpackers</h1>
+                <p>at V&A we bring you morden hostel accommodation at an affordable price</p><br>
+                Travelling on a budget? <br><br>Well V&A backpackers is about to be your best friend <br>
+                Hostels have been around for a long time, and at V&A we provide great accommodation
+                </p>
+            </div>
+       
+            <section class="accommodation">
+                <div class="section-content" >
+                        <div class="info" id="rooms">
+                            <h1>About Accommodation</h1>
+                            <p>Info about the type or style of accommodation we have</p><br>
+                            <p>We are able to accommodate up to 26 guests comfortably</p>
+                        </div>
+                        <ul class="room-list">
+                            <li class="room">
+                                <img src="/6 Bed Room.jpg" alt="room1" class="room-image">
+                                <figure>
+                                    <figcaption>6 Bed Male Dormitory Room</figcaption>
+                                </figure>
+                            </li>
+                             <li class="room">
+                                <img src="/6 Bed Room.jpg" alt="room2" class="room-image" >
+                            </li>  
+                             <li class="room">
+                                <img src="/6.1 Bed Room.jpg" alt="room3" class="room-image">
+                            </li>  
+                             <li class="room">
+                                <img src="/10 Bed Room.jpg" alt="room4" class="room-image">
+                            </li>    
+                        </ul>
+                </div>
+            </section>
+            <section class="contact-section">
+                <div class="book" id="contact">
+                    <h1>CONTACT US</h1>
+                    <P>Book now or contact us for for information<br> We are avaliable 7 days a week 365</P>
+                </div>
+                <div class="container" id="about" >
+                    <div class="form-box book">
+                        <h2>Book</h2>
+                        <form id="form" class="form" action="/post" method="post">
+                            <div class="input " >
+                                <span class="icon">
+                                <ion-icon name="person-add-outline"></ion-icon>
+                                </span>
+                                <input type="text" id="firstName" name="firstName" onkeyup="validFirstName()">
+                                <label>First Name</label> 
+                                <small id="err_Name"></small>
+                            </div>
+                            <div class="input">
+                                <span class="icon">
+                                <ion-icon name="person-add-outline"></ion-icon>
+                                </span>
+                                <input type="text" id="lastName" name="lastName" onkeyup="validLastName()">
+                               <label>Last Name</label>
+                                <small id="err_Surname"></small>
+                            </div>
+                            <div class="input">
+                                <span class="icon">
+                                <ion-icon name="call-outline"></ion-icon>
+                                </span>
+                                <input type="email" id="email" name="email" onkeyup="validEmail()">
+                                <label>Email</label>
+                                <small id="err_Email"></small>
+                            </div>
+                            <div class="input">
+                                <span class="icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                                </span>
+                                <input type="number" id="number" name="number" onkeyup="validNumber()">                  
+                                <label>Number</label>
+                                <small id="err_Number"></small>
+                            </div>
+                            <div class="input">
+                                <span class="icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                                </span>
+                                <label>The Number Of Guests</label>
+                                <input type="number" id="guests" name="guests" min="1" max="26">
+                                <small id="err_Guests"></small>
+                            </div>
+                            <div class="input">
+                                <span class="icon">
+                                <ion-icon name="moon"></ion-icon>
+                                </span>
+                                <input type="number" id="nights" name="nights" min="1">
+                                <label>Nights</label>
+                                <small id="err_Nights"></small>
+                            </div>
+                            <button type="submit" class="btn">BOOK</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-section">
+                <div class="section-content">
+                    <p class="copyright">2024 V&A Backpackers</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p class="policy-text">
+                        <a href="#" class="policy-link">Privacy Policy</a>
+                        <span>.</span>
+                        <a href="#" class="policy-link">Refund Policy</a>
+                    </p>
+                </div>
+            </footer>
+        </main>
+        <script src="/script.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

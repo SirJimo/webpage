@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    background-image: url(/hd_f41d021d5780da7981ac6ad88f710001.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content:center;
+    display: flex;
+    align-content: center;
+    min-height: 300vh;
+    
+}
+
+header
+{
+    position: fixed;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 10px;
+   padding-bottom: 5%;
+}
+
+.logo
+{
+    color: aqua;
+    font-size: 35px;
+    user-select: none;
+}
+.navbar
+{
+    color:hotpink;
+    font-size: 18px;
+    font-weight:350px;
+    position: relative;
+    text-decoration: none;
+    margin-left: 20px;
+}
+/*navbar .btnBook-poppup
+{
+    background: transparent;
+    border: 4px aliceblue;
+    border-radius: 6px;
+    outline: none;
+    height: 50px;
+    width: 120px;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 650;
+    color: aquamarine;
+    margin-left: 10px;
+}*/
+.navbar .btnBook-poppup:hover
+{
+    background: antiquewhite;
+
+}
+.navbar a
+{
+    position: relative;
+    color:chartreuse;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::after
+{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: crimson;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+}
+.navbar a:hover::after
+{
+    transform-origin: left;
+    transform: scaleY(1);
+}
+
+.container
+{
+
+    align-items: center;
+    background: transparent;
+    border: 3px solid lightgray;
+    border-radius: 20px;
+    backdrop-filter:blur(5px);
+    box-shadow: 0 0 30px white;
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+    position:relative;
+   /*top: 30%;*/
+   
+    
+}
+
+.container .form-box
+{
+    width: 100%;
+    padding: 20px;
+}
+.form-box h2
+{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+}
+.input
+{
+    height: 40px;
+    width: 100%;
+    margin: 50px 0;
+    position:relative;
+    
+    
+    
+}
+.input span
+{
+    position: absolute;
+    bottom: 12px;
+    right: 17px;
+    font-size: 12px;
+    color: darkorange;
+}
+
+input
+{
+    color:inherit;
+    background-color: transparent;
+    border: 1px solid darkslategrey;
+    border-radius: 5px;
+   /* border-bottom: 2px solid darkslategray;*/
+    font-size: 18px;
+    font-weight: 400;
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 5px 0 5px;
+}
+input:focus
+{
+    background-color: transparent;
+    outline: transparent;
+    
+}
+label
+{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    position:absolute; 
+    left:0;
+    top: -1em;
+    transition: .5s ease;
+
+}
+input:focus~label, input:valid~label
+{
+    top:-1.2em;
+    color:gold;
+    font-size: 20px;
+}
+.input select::view-transition
+{
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    display: flex;
+}
+.input .icon
+{
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    right: 8px;
+    line-height: 57px;
+}
+.input input:focus
+{
+    outline: 0;
+}
+
+.input.errText input
+{
+    border-color: red;
+}
+.input.success input
+{
+    border-color: green;
+}
+.btn
+{
+    color: aliceblue;
+    cursor: pointer;
+    background: darkslategray;
+    border: none;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: 500;
+    height: 45px;
+    width: 100%;
+    outline: none;
+}
+.home-info
+{
+    padding: 120px 0;
+}
+.home-info h1
+{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 35px;
+}
+.info 
+{
+    padding: 100px 0;
+}
+.info h1
+{
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 50px;
+    padding: 5%;
+}
+.info p
+{
+    color: black;
+    font-size: 20px;
+    
+}
+
+.accommodation
+{
+    padding:50px 0 100px;
+}
+
+.room-list li
+{
+    list-style: none;
+}
+
+.accommodation .room-list
+{
+    display:flexbox;
+    flex-wrap: wrap;
+    gap: 40px;
+}    
+.book
+{
+    padding: 5px 100px;
+}
+.contact-section
+{
+    padding: 50px 100px;
+}
+
+.input.success input
+{
+    border-color: green;
+}
+
+.accommodation .room-list .room-image
+{
+    cursor: zoom-in;
+    height: 350px;
+    width: 350px;
+    transition: 0.5s ease-in-out;
+}
+.accommodation .room:hover .room-image
+{
+    transform: scale(1.2);
+}
