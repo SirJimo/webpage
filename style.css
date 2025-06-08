@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+   
+    background-image:url(images/background2.jpg);
+    background-size:contain;
+    
+}
+header
+{
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.menu
+{
+    display: flex;
+    position: relative;
+    font-weight: 600px;
+    text-decoration: none;
+    
+}
+.menu a
+{
+    position: relative;
+    color:chartreuse;
+    font-size: 25px;
+    font-weight: 600px;
+    text-decoration: none;
+    padding: 10px 2px;
+    margin-left: 40px;
+}
+.menu a::after
+{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    background: crimson;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s ease;
+}
+.menu a:hover::after
+{
+    transform-origin: left;
+    transform: scaleY(1);
+}
+.form-container
+{
+    background: transparent;
+    width: 450px;
+    padding: 5%;
+    margin: 20px auto;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    position: relative;
+
+}
+.book-form
+{
+    width: 100%;
+    padding: 20px;
+}
+.form-container h2
+{
+    color: crimson;
+    font-size: 40px;
+    margin: 0 0 40px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+.input
+{
+    height: 40px;
+    width: 100%;
+    margin: 50px 0;
+    position: relative;
+}
+.form-container input
+{
+    border: none;
+    box-shadow: none;
+    border-bottom: 2px solid darkslategrey;
+    width: 100%;
+    
+    padding: 0 5px 5px;
+    font-size: 18px;
+    outline: none;
+}
+.form-container .btn
+{
+    cursor: pointer;
+    color: red;
+    background: darkslategrey;
+    border-radius: 10px;
+    border: none;
+    font-size: 10px;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.form-container .btn:hover
+{
+    background: dodgerblue;
+}
+.form-container form .input
+{
+    position: relative;
+}
+.form-container form .input label
+{
+    position: absolute;
+    left: 0px;
+    right: -1em;
+    transition: .5s ease;
+}
+.form-container input:focus
+{
+    background-color: transparent;
+    outline: transparent;
+}
+
+.form-container input:focus ~label,
+.form-container input:valid ~label
+{
+    color: darkslategray;
+    font-size: 18px;
+    font-weight: bold;
+    left: 0;
+    top: -1.2em
+}
+.input span
+{
+    position: absolute;
+    right: 17px;
+    font-size: 15px;
+    top:0;
+    right: 0;
+    color: darkorange;
+}
+.input .icon
+{
+    
+    color: black;
+    font-size: 18px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    line-height: 35px;
+}
+.input select
+.input.errText input
+{
+    border-color: red;
+}
+.input.success input
+{
+    border-color: green;
+}
+.home-info
+{
+    padding: 100px 0;
+}
+.home-info h1
+{
+    font-size: 50px;
+    text-align: center;
+    font-weight: 30px;
+    font-style: italic;
+}
+.home-info p
+{
+    padding-left: 25%;
+    color: black;
+    font-size: 18px;
+}
+.info h1
+{
+    font-size: 40px;
+    text-align: center;
+    font-style: italic;
+    font-weight: 30px;
+    
+}
+.info p
+{
+    padding-left: 25%;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+.room-section .room-item
+{
+    aspect-ratio: 1px;
+    width: 100%;
+    height: 100%;
+    cursor:zoom-in;
+    transition: 0.5s ease;
+}
+.room-list
+{
+    list-style: none;
+    padding-left: 10%;
+    gap: 50px;
+    display: flex;
+    flex-wrap: flex;
+}
+.room-section .room-types:hover .room-item
+{
+    transform: scale(1.2);
+}
+.room-section .room-types .room-info
+{
+    position: relative;
+    font-size: 18px;
+    font-weight: 200px;
+    padding-bottom: 5%;
+}
+.contact-section
+{
+    padding: 50px 0 100px;
+}
+.booking-content h1
+{
+    padding-left: 5%;
+    font-size: 25px;
+}
+.booking-content p
+{
+    font-size: 18px;
+    padding-left: 10px;
+}
